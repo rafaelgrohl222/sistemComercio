@@ -1,0 +1,43 @@
+use bd_comercio
+
+--procedimento mostrar
+create proc spmostrar_categoria
+as
+--selecionar todas as primeiras 200 linha da tabela em ordem baseando no id_ decrescente
+select top 200 * from tbl_categoria
+order by id_categoria desc
+go
+
+--procedimento buscar nome
+create proc spbuscar_nome
+@testobuscar varchar (50)
+--selecionar todos @variavel tabela baseado nome aproximado @variavel depois
+as select * from tbl_categoria where nome like @testobuscar + '%'
+go
+
+--procedimento inserir categoria
+create proc spinserir_categoria
+@id_categoria int output,
+@nome varchar(50),
+@descricao varchar(100)
+as
+insert into tbl_categoria (nome, descricao) VALUES (@nome, @descricao)
+go
+
+--procedimento editar categoria
+create proc speditar_categoria
+@id_categoria int output,
+@nome varchar(50),
+@descricao varchar(100)
+as
+--atualizar tabela onde campo nome SQL tabela recebe valor da variavel baseado no id_da tabela e informação variavel
+update tbl_categoria set nome=@nome, descricao=@descricao where id_categoria=@id_categoria
+go
+
+--procedimento deletar categoria
+create proc spdeletar_categoria
+@id_categoria int output
+as
+--deletar na tabela baseado no id_ na tabela baseado no id_da tabela e informação variavel
+delete from tbl_categoria where id_categoria=@id_categoria
+go
