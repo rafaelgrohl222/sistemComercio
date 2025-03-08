@@ -12,4 +12,3 @@ namespace CamadaDados
         public static string Cn = "Data Source = DESKTOP-A0D6SHM\\RAFAEL; Inicial Catalog = bd_comercio; Integrated Security=true";
     }
 }
-//Aula 19, 0min
