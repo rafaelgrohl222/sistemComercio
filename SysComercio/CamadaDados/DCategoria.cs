@@ -20,10 +20,10 @@ namespace CamadaDados
         public string Descricao { get => _Descricao; set => _Descricao = value; }
         public string TextoBuscar { get => _TextoBuscar; set => _TextoBuscar = value; }
 
-        //Construtor s/ parâmetros
+        //Construtor S/ parâmetros
         public DCategoria() { }
 
-        //Construtor c/ parâmetros
+        //Construtor C/ parâmetros
         public DCategoria(int idcategoria, string nome, string descricao, string buscarnome)
         {
             //Receber informações do BDs
@@ -85,6 +85,7 @@ namespace CamadaDados
                 //Se a conexão for aberta e o status estiver aberta, então fechar conexão
                 if(SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
+            return resp;
         }
         //Método Editar
         public string Editar(DCategoria Categoria) 
@@ -139,6 +140,7 @@ namespace CamadaDados
                 //Se a conexão for aberta e o status estiver aberta, então fechar conexão
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
+            return resp;
         }
         //Método Excluir
         public string Excluir(DCategoria Categoria) 
@@ -177,9 +179,10 @@ namespace CamadaDados
                 //Se a conexão for aberta e o status estiver aberta, então fechar conexão
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
+            return resp;
         }
         //Método Mostrar
-        public DataTable Mostrar(DCategoria Categoria) 
+        public DataTable Mostrar() 
         {
             DataTable DtResultado = new DataTable("categoria");
             SqlConnection SqlCon = new SqlConnection();
@@ -198,6 +201,7 @@ namespace CamadaDados
             {
                 DtResultado = null;//Não mostrainformação se houver erro.
             }
+            return DtResultado;
         }
         //Método Buscar Nome
         public DataTable BuscarNome(DCategoria Categoria) 
@@ -227,6 +231,7 @@ namespace CamadaDados
             {
                 DtResultado = null;//Não mostrainformação se houver erro.
             }
+            return DtResultado;
         }
     }
 }
