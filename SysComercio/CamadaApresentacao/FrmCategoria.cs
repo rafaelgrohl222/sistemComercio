@@ -104,5 +104,15 @@ namespace CamadaApresentacao
             this.Habilitar(false);
             this.botoes();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            this.BuscarNome();
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            this.BuscarNome();
+        }
     }
 }// parei aula 44 - 0min00seg

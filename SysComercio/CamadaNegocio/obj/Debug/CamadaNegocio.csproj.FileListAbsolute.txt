@@ -7,3 +7,12 @@ D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\Camada
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.CopyComplete
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.dll
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.pdb
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\CamadaNegocio.dll
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\CamadaNegocio.pdb
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\CamadaDados.dll
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\CamadaDados.pdb
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.AssemblyReference.cache
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.CoreCompileInputs.cache
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.CopyComplete
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.dll
+E:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.pdb

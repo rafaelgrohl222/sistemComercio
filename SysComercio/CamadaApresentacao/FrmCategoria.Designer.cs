@@ -139,11 +139,11 @@ namespace CamadaApresentacao
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(464, 54);
+            this.lblTotal.Location = new System.Drawing.Point(497, 54);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(45, 16);
+            this.lblTotal.Size = new System.Drawing.Size(42, 16);
             this.lblTotal.TabIndex = 5;
-            this.lblTotal.Text = "label3";
+            this.lblTotal.Text = "Total:";
             // 
             // btnImprimir
             // 
@@ -171,6 +171,7 @@ namespace CamadaApresentacao
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscar
             // 
@@ -178,6 +179,7 @@ namespace CamadaApresentacao
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(184, 22);
             this.txtBuscar.TabIndex = 1;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label2
             // 
