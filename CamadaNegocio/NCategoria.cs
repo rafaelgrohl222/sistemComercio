@@ -42,5 +42,13 @@ namespace CamadaNegocio
         {
             return new DCategoria().Mostrar();
         }
+
+        //Método Buscar Nome
+        public static DataTable BuscarNome(string textobuscar)
+        {
+            DCategoria Obj = new DCategoria();
+            Obj.TextoBuscar = textobuscar;
+            return Obj.BuscarNome(Obj);
+        }
     }
-}
+}//Aula 33 00min00seg
