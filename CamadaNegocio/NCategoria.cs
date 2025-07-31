@@ -8,7 +8,7 @@ using System.Data;
 
 namespace CamadaNegocio
 {
-    class NCategoria
+    public class NCategoria
     {
         //Método Inserir
         public static string Incerir(string nome, string descricao)
@@ -38,7 +38,7 @@ namespace CamadaNegocio
         }
 
         //Método Mostrar
-        public static DataTable Mostar()
+        public static DataTable Mostrar()
         {
             return new DCategoria().Mostrar();
         }
