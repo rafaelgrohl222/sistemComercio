@@ -67,7 +67,7 @@ namespace CamadaDados
 
                 //Procedure @descricao
                 SqlParameter ParDescricao = new SqlParameter();
-                ParDescricao.ParameterName = "ParDescricao";
+                ParDescricao.ParameterName = "@descricao";
                 ParDescricao.SqlDbType = SqlDbType.VarChar;
                 ParDescricao.Size = 100;
                 ParDescricao.Value = Categoria.Descricao;
@@ -123,7 +123,7 @@ namespace CamadaDados
 
                 //Procedure @descricao
                 SqlParameter ParDescricao = new SqlParameter();
-                ParDescricao.ParameterName = "ParDescricao";
+                ParDescricao.ParameterName = "descricao";
                 ParDescricao.SqlDbType = SqlDbType.VarChar;
                 ParDescricao.Size = 100;
                 ParDescricao.Value = Categoria.Descricao;
@@ -221,16 +221,17 @@ namespace CamadaDados
                 SqlCmd.Connection = SqlCon;//Receber a conexâo
                 SqlCmd.CommandText = "spbuscar_nome";//Recebe procedure
                 SqlCmd.CommandType = CommandType.StoredProcedure;//Tipo de comendo
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);//Guardar informações
-                SqlDat.Fill(DtResultado);//Preencher da tabela
 
                 //Procedure @descricao
                 SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@textoBuscar";
+                ParTextoBuscar.ParameterName = "@testobuscar";
                 ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Categoria.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);//Guardar informações
+                SqlDat.Fill(DtResultado);//Preencher da tabela
             }
             catch (Exception ex)
             {

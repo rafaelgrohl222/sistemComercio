@@ -124,6 +124,7 @@ namespace Camada_Apresentacao
             this.chkDeletar.TabIndex = 7;
             this.chkDeletar.Text = "Deletar";
             this.chkDeletar.UseVisualStyleBackColor = true;
+            this.chkDeletar.CheckedChanged += new System.EventHandler(this.chkDeletar_CheckedChanged);
             // 
             // dataLista
             // 
@@ -140,12 +141,15 @@ namespace Camada_Apresentacao
             this.dataLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataLista.Size = new System.Drawing.Size(706, 165);
             this.dataLista.TabIndex = 6;
+            this.dataLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataLista_CellContentClick);
+            this.dataLista.DoubleClick += new System.EventHandler(this.dataLista_DoubleClick);
             // 
             // Deletar
             // 
             this.Deletar.HeaderText = "Deletar";
             this.Deletar.Name = "Deletar";
             this.Deletar.ReadOnly = true;
+            this.Deletar.Width = 150;
             // 
             // lblTotal
             // 
@@ -176,6 +180,7 @@ namespace Camada_Apresentacao
             this.btnDeletar.TabIndex = 3;
             this.btnDeletar.Text = "Deletar";
             this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // btnBuscar
             // 
@@ -247,6 +252,7 @@ namespace Camada_Apresentacao
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnNovo
             // 
@@ -257,6 +263,7 @@ namespace Camada_Apresentacao
             this.btnNovo.TabIndex = 8;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnEditar
             // 
@@ -267,6 +274,7 @@ namespace Camada_Apresentacao
             this.btnEditar.TabIndex = 7;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnSalvar
             // 
@@ -277,6 +285,7 @@ namespace Camada_Apresentacao
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtDescricao
             // 
@@ -375,7 +384,6 @@ namespace Camada_Apresentacao
         private System.Windows.Forms.DataGridView dataLista;
         private System.Windows.Forms.CheckBox chkDeletar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Deletar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -389,5 +397,6 @@ namespace Camada_Apresentacao
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.ErrorProvider errorIcone;
         private System.Windows.Forms.ToolTip ttMensagemErro;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Deletar;
     }
 }
