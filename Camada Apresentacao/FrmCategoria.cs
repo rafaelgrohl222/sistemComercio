@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CamadaNegocio;
+using Camada_Apresentacao;
 
 namespace Camada_Apresentacao
 {
@@ -263,5 +264,11 @@ namespace Camada_Apresentacao
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
-    }//Aula 53, 00:00
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            FrmRelatCateg rlt = new FrmRelatCateg();
+            rlt.ShowDialog();
+        }
+    }
 }

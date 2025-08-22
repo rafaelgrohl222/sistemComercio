@@ -4,6 +4,8 @@ D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\Camada
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\CamadaDados.pdb
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.AssemblyReference.cache
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.CoreCompileInputs.cache
-D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.CopyComplete
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.dll
 D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.pdb
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\obj\Debug\CamadaNegocio.csproj.CopyComplete
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\CamadaNegocio\bin\Debug\System.Net.Http.dll

@@ -13,27 +13,33 @@ namespace CamadaNegocio
         //Método Inserir
         public static string Incerir(string nome, string descricao)
         {
-            DCategoria Obj = new CamadaDados.DCategoria();
-            Obj.Nome = nome;
-            Obj.Descricao = descricao;
+            DCategoria Obj = new CamadaDados.DCategoria
+            {
+                Nome = nome,
+                Descricao = descricao
+            };
             return Obj.Inserir(Obj);
         }
 
         //Método Editar
         public static string Editar(int idcategoria, string nome, string descricao)
         {
-            DCategoria Obj = new CamadaDados.DCategoria();
-            Obj.IdCategoria = idcategoria;
-            Obj.Nome = nome;
-            Obj.Descricao = descricao;
+            DCategoria Obj = new CamadaDados.DCategoria
+            {
+                IdCategoria = idcategoria,
+                Nome = nome,
+                Descricao = descricao
+            };
             return Obj.Editar(Obj);
         }
 
         //Método Deletar
         public static string Excluir(int idcategoria)
         {
-            DCategoria Obj = new CamadaDados.DCategoria();
-            Obj.IdCategoria = idcategoria;
+            DCategoria Obj = new CamadaDados.DCategoria
+            {
+                IdCategoria = idcategoria
+            };
             return Obj.Excluir(Obj);
         }
 
@@ -46,8 +52,10 @@ namespace CamadaNegocio
         //Método Buscar Nome
         public static DataTable BuscarNome(string textobuscar)
         {
-            DCategoria Obj = new DCategoria();
-            Obj.TextoBuscar = textobuscar;
+            DCategoria Obj = new DCategoria
+            {
+                TextoBuscar = textobuscar
+            };
             return Obj.BuscarNome(Obj);
         }
     }

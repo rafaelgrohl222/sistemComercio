@@ -1,0 +1,22 @@
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\bin\Debug\Camada Apresentacao.dll
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\bin\Debug\Camada Apresentacao.pdb
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\bin\Debug\CamadaNegocio.dll
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\bin\Debug\CamadaDados.dll
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\bin\Debug\CamadaNegocio.pdb
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\bin\Debug\CamadaDados.pdb
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.csproj.AssemblyReference.cache
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada_Apresentacao.FrmCategoria.resources
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.csproj.GenerateResource.cache
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.csproj.CoreCompileInputs.cache
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.csproj.CopyComplete
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.dll
+D:\CCharp_Projetos\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.pdb
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.csproj.AssemblyReference.cache
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada_Apresentacao.Form1.resources
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada_Apresentacao.FrmCategoria.resources
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.csproj.GenerateResource.cache
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\RdlCompile.cache
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\RdlCompile.compiled
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.csproj.CoreCompileInputs.cache
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.dll
+D:\CCharp_Projetos\cCharp_SysComercio\cCharp_SysComercio\SysComercio\Camada Apresentacao\obj\Debug\Camada Apresentacao.pdb

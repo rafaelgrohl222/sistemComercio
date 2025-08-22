@@ -11,34 +11,38 @@ namespace CamadaNegocio
     public class NCategoria
     {
         //Método Inserir
-        public static string Inserir(string nome, string descricao)
+        public static string Incerir(string nome, string descricao)
         {
             DCategoria Obj = new CamadaDados.DCategoria();
             Obj.Nome = nome;
             Obj.Descricao = descricao;
-            return Obj.Inserir(Obj);//Passar a DCategoria
+            return Obj.Inserir(Obj);
         }
+
         //Método Editar
         public static string Editar(int idcategoria, string nome, string descricao)
         {
             DCategoria Obj = new CamadaDados.DCategoria();
-            Obj.Id_categoria = idcategoria;
+            Obj.IdCategoria = idcategoria;
             Obj.Nome = nome;
             Obj.Descricao = descricao;
             return Obj.Editar(Obj);
         }
-        //Método Excluir
+
+        //Método Deletar
         public static string Excluir(int idcategoria)
         {
             DCategoria Obj = new CamadaDados.DCategoria();
-            Obj.Id_categoria = idcategoria;
+            Obj.IdCategoria = idcategoria;
             return Obj.Excluir(Obj);
         }
+
         //Método Mostrar
         public static DataTable Mostrar()
         {
             return new DCategoria().Mostrar();
         }
+
         //Método Buscar Nome
         public static DataTable BuscarNome(string textobuscar)
         {
@@ -47,4 +51,4 @@ namespace CamadaNegocio
             return Obj.BuscarNome(Obj);
         }
     }
-}        //Aula 37, 0min00seg
+}

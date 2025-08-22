@@ -8,7 +8,7 @@ namespace CamadaDados
 {
     class Conexao
     {
-        //Cn = Conexão, Data Source: Nome Servidor, Inicial Catalog: Nome BD, Integrated Security: trabalhe com essa integração 
-        public static string Cn = "Data Source = DESKTOP-A0D6SHM\\RAFAEL; Inicial Catalog = bd_comercio; Integrated Security=true";
+        //Cn: Conexao, Data Source: Nome do Servidor, Initial Catalog: Nome Banco Dados, Integrated Security: Verdadeiro e trabalhe com a integração de Segurança
+        public static string Cn = "Data Source = DESKTOP-A0D6SHM\\RAFAEL; Initial Catalog = bd_comercio; Integrated Security=true";
     }
 }

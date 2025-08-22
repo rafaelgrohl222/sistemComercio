@@ -44,33 +44,40 @@ namespace CamadaDados
                 SqlCon.ConnectionString = Conexao.Cn;//Chamar link conexâo
                 SqlCon.Open();//Abrir nova conexão
 
-                SqlCommand SqlCmd = new SqlCommand();//Estanciar
-                SqlCmd.Connection = SqlCon;//Receber a conexâo
-                SqlCmd.CommandText = "spinserir_categoria";//Recebe procedure
-                SqlCmd.CommandType = CommandType.StoredProcedure;//Executar o comando da procedure
+                SqlCommand SqlCmd = new SqlCommand
+                {
+                    Connection = SqlCon,//Receber a conexâo
+                    CommandText = "spinserir_categoria",//Recebe procedure
+                    CommandType = CommandType.StoredProcedure//Executar o comando da procedure
+                };//Estanciar
 
-                SqlParameter ParIdcategoria = new SqlParameter();//Estanciar
-
-                //Procedure @id_categoria
-                ParIdcategoria.ParameterName = "@id_categoria";//Executar a procedure
-                ParIdcategoria.SqlDbType = SqlDbType.Int;//Tipo de dados
-                ParIdcategoria.Direction = ParameterDirection.Output;//Direção
+                SqlParameter ParIdcategoria = new SqlParameter
+                {
+                    //Procedure @id_categoria
+                    ParameterName = "@id_categoria",//Executar a procedure
+                    SqlDbType = SqlDbType.Int,//Tipo de dados
+                    Direction = ParameterDirection.Output//Direção
+                };//Estanciar
                 SqlCmd.Parameters.Add(ParIdcategoria);//Add no SQL
 
                 //Procedure @nome
-                SqlParameter ParNome = new SqlParameter();
-                ParNome.ParameterName = "@nome";
-                ParNome.SqlDbType = SqlDbType.VarChar;
-                ParNome.Size = 50;
-                ParNome.Value = Categoria.Nome;
+                SqlParameter ParNome = new SqlParameter
+                {
+                    ParameterName = "@nome",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 50,
+                    Value = Categoria.Nome
+                };
                 SqlCmd.Parameters.Add(ParNome);
 
                 //Procedure @descricao
-                SqlParameter ParDescricao = new SqlParameter();
-                ParDescricao.ParameterName = "@descricao";
-                ParDescricao.SqlDbType = SqlDbType.VarChar;
-                ParDescricao.Size = 100;
-                ParDescricao.Value = Categoria.Descricao;
+                SqlParameter ParDescricao = new SqlParameter
+                {
+                    ParameterName = "@descricao",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 100,
+                    Value = Categoria.Descricao
+                };
                 SqlCmd.Parameters.Add(ParDescricao);
 
                 //                                       se sim? caso contrario : "Não Inserido"
@@ -100,33 +107,40 @@ namespace CamadaDados
                 SqlCon.ConnectionString = Conexao.Cn;//Chamar link conexâo
                 SqlCon.Open();//Abrir nova conexão
 
-                SqlCommand SqlCmd = new SqlCommand();//Estanciar
-                SqlCmd.Connection = SqlCon;//Receber a conexâo
-                SqlCmd.CommandText = "speditar_categoria";//Recebe procedure
-                SqlCmd.CommandType = CommandType.StoredProcedure;//Executar o comando da procedure
+                SqlCommand SqlCmd = new SqlCommand
+                {
+                    Connection = SqlCon,//Receber a conexâo
+                    CommandText = "speditar_categoria",//Recebe procedure
+                    CommandType = CommandType.StoredProcedure//Executar o comando da procedure
+                };//Estanciar
 
-                SqlParameter ParIdcategoria = new SqlParameter();//Estanciar
-
-                //Procedure @id_categoria
-                ParIdcategoria.ParameterName = "@id_categoria";//Executar a procedure
-                ParIdcategoria.SqlDbType = SqlDbType.Int;//Tipo de dados
-                ParIdcategoria.Value = Categoria.IdCategoria;//Value
+                SqlParameter ParIdcategoria = new SqlParameter
+                {
+                    //Procedure @id_categoria
+                    ParameterName = "@id_categoria",//Executar a procedure
+                    SqlDbType = SqlDbType.Int,//Tipo de dados
+                    Value = Categoria.IdCategoria//Value
+                };//Estanciar
                 SqlCmd.Parameters.Add(ParIdcategoria);//Add no SQL
 
                 //Procedure @nome
-                SqlParameter ParNome = new SqlParameter();
-                ParNome.ParameterName = "@nome";
-                ParNome.SqlDbType = SqlDbType.VarChar;
-                ParNome.Size = 50;
-                ParNome.Value = Categoria.Nome;
+                SqlParameter ParNome = new SqlParameter
+                {
+                    ParameterName = "@nome",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 50,
+                    Value = Categoria.Nome
+                };
                 SqlCmd.Parameters.Add(ParNome);
 
                 //Procedure @descricao
-                SqlParameter ParDescricao = new SqlParameter();
-                ParDescricao.ParameterName = "descricao";
-                ParDescricao.SqlDbType = SqlDbType.VarChar;
-                ParDescricao.Size = 100;
-                ParDescricao.Value = Categoria.Descricao;
+                SqlParameter ParDescricao = new SqlParameter
+                {
+                    ParameterName = "descricao",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 100,
+                    Value = Categoria.Descricao
+                };
                 SqlCmd.Parameters.Add(ParDescricao);
 
                 //                                       se sim? caso contrario : "Não Inserido"
@@ -156,17 +170,20 @@ namespace CamadaDados
                 SqlCon.ConnectionString = Conexao.Cn;//Chamar link conexâo
                 SqlCon.Open();//Abrir nova conexão
 
-                SqlCommand SqlCmd = new SqlCommand();//Estanciar
-                SqlCmd.Connection = SqlCon;//Receber a conexâo
-                SqlCmd.CommandText = "spdeletar_categoria";//Recebe procedure
-                SqlCmd.CommandType = CommandType.StoredProcedure;//Executar o comando da procedure
+                SqlCommand SqlCmd = new SqlCommand
+                {
+                    Connection = SqlCon,//Receber a conexâo
+                    CommandText = "spdeletar_categoria",//Recebe procedure
+                    CommandType = CommandType.StoredProcedure//Executar o comando da procedure
+                };//Estanciar
 
-                SqlParameter ParIdcategoria = new SqlParameter();//Estanciar
-
-                //Procedure @id_categoria
-                ParIdcategoria.ParameterName = "@id_categoria";//Executar a procedure
-                ParIdcategoria.SqlDbType = SqlDbType.Int;//Tipo de dados
-                ParIdcategoria.Value = Categoria.IdCategoria;//Value
+                SqlParameter ParIdcategoria = new SqlParameter
+                {
+                    //Procedure @id_categoria
+                    ParameterName = "@id_categoria",//Executar a procedure
+                    SqlDbType = SqlDbType.Int,//Tipo de dados
+                    Value = Categoria.IdCategoria//Value
+                };//Estanciar
                 SqlCmd.Parameters.Add(ParIdcategoria);//Add no SQL
 
                 //                                       se sim? caso contrario : "Não Inserido"
@@ -194,10 +211,12 @@ namespace CamadaDados
             try
             {
                 SqlCon.ConnectionString = Conexao.Cn;//Chamar link conexâo
-                SqlCommand SqlCmd = new SqlCommand();//Estanciar
-                SqlCmd.Connection = SqlCon;//Receber a conexâo
-                SqlCmd.CommandText = "spmostrar_categoria";//Recebe procedure
-                SqlCmd.CommandType = CommandType.StoredProcedure;//Tipo de comendo
+                SqlCommand SqlCmd = new SqlCommand
+                {
+                    Connection = SqlCon,//Receber a conexâo
+                    CommandText = "spmostrar_categoria",//Recebe procedure
+                    CommandType = CommandType.StoredProcedure//Tipo de comendo
+                };//Estanciar
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);//Guardar informações
                 SqlDat.Fill(DtResultado);//Preencher da tabela
             }
@@ -217,17 +236,21 @@ namespace CamadaDados
             try
             {
                 SqlCon.ConnectionString = Conexao.Cn;//Chamar link conexâo
-                SqlCommand SqlCmd = new SqlCommand();//Estanciar
-                SqlCmd.Connection = SqlCon;//Receber a conexâo
-                SqlCmd.CommandText = "spbuscar_nome";//Recebe procedure
-                SqlCmd.CommandType = CommandType.StoredProcedure;//Tipo de comendo
+                SqlCommand SqlCmd = new SqlCommand
+                {
+                    Connection = SqlCon,//Receber a conexâo
+                    CommandText = "spbuscar_nome",//Recebe procedure
+                    CommandType = CommandType.StoredProcedure//Tipo de comendo
+                };//Estanciar
 
                 //Procedure @descricao
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@testobuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Categoria.TextoBuscar;
+                SqlParameter ParTextoBuscar = new SqlParameter
+                {
+                    ParameterName = "@testobuscar",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 50,
+                    Value = Categoria.TextoBuscar
+                };
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);//Guardar informações

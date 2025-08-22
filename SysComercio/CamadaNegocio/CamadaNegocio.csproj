@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{192F17AB-E3F2-46A2-A70D-9373884B7CA9}</ProjectGuid>
+    <ProjectGuid>{428A5E45-CC1A-4E94-8ED5-964D78E87D38}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CamadaNegocio</RootNamespace>
     <AssemblyName>CamadaNegocio</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
-      <Project>{9b21c844-53a3-4687-a17b-5e70fa7e058e}</Project>
+      <Project>{7b727597-8cec-4838-a24b-92697018bcf6}</Project>
       <Name>CamadaDados</Name>
     </ProjectReference>
   </ItemGroup>
